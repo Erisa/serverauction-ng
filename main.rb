@@ -11,7 +11,7 @@ class String
   end
 end
 
-token = File.open('token.txt').readlines[0]
+token = ENV['DISCORD_TOKEN']
 
 time_taken = 0
 def update_list(old_servers)
